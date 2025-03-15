@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'sans-regular';
+    src: url('/assets/fonts/WorkSans-Regular.woff2') format('woff2'),
+        url('/assets/fonts/WorkSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px !important;
+}
+
+footer ul li {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+footer ul li i {
+    color: #19C8D0;
+}
+
+footer ul li a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer form input,
+footer textarea {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #000;
+    padding: 10px 15px;
+    color: #fff;
+    font-family: 'sans-regular';
+    background: none;
+    font-family: 16px;
+    width: 100%;
+}
+
+footer textarea {
+    min-height: 150px;
+}
+
+footer form input::placeholder,
+footer textarea::placeholder {
+    color: #000;
+}
+
+@media only screen and (min-width: 768px) {
+    footer ul {
+        margin-bottom: 0px !important;
+    }
+
+    footer form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer form input {
+        margin-bottom: 20px;
+    }
+
+    footer form input:nth-child(2),
+    footer form input:nth-child(3) {
+        width: 48%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    footer {
+        position: relative;
+        overflow: hidden;
+    }
+
+    footer::before {
+        content: '';
+        position: absolute;
+        bottom: -48px;
+        right: 0;
+        background-image: url(/assets/img/footer-effect.png);
+        height: 238px;
+        width: 220px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    footer h1 {
+        text-align: left;
+        font-size: 4rem;
+    }
+
+    footer ul {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    footer ul li a {
+        text-align: left;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    footer h1 {
+        font-size: 5.2rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    footer .row .col-12 ul {
+        border-bottom: 1px solid #dddddd;
+        padding-bottom: 20px !important;
+    }
+}

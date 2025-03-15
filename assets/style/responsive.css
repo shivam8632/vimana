@@ -1,0 +1,407 @@
+@media only screen and (min-width: 750px) {
+    .container-fluid {
+        padding-inline: 1.5rem !important;
+    }
+
+    .banner .banner-container h2 {
+        font-size: 3rem;
+    }
+
+    .banner .banner-image {
+        bottom: 9rem;
+    }
+
+    .banner .banner-image img {
+        max-width: 14rem;
+    }
+
+    @keyframes rocket {
+        0% {
+            bottom: 0;
+        }
+
+        100% {
+            bottom: 9rem;
+        }
+    }
+
+    .about .about-container .about-challenges .about-challenges-one,
+    .about .about-container .about-challenges .about-challenges-two {
+        width: calc(50% - 20px);
+    }
+
+    .about .about-container .about-challenges .about-challenges-three {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about .about-container .about-challenges .about-challenges-three .about-challenge-right {
+        display: flex;
+        min-width: 200px;
+    }
+
+    .about .about-container .about-challenges .about-challenges-three .about-challenge-right img {
+        max-width: 150px;
+    }
+
+    .portfolio .item {
+        background: url(/assets/img/portfolio-item-bg.png);
+        padding: 6rem 0rem 0 7rem;
+    }
+
+    .portfolio .item .item-content {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .portfolio .item img {
+        display: flex;
+        margin-top: auto;
+        justify-content: flex-end;
+        margin-left: auto;
+        width: 100%;
+        max-width: 330px;
+        transform: translate(0px, -140px);
+    }
+
+    .delivery .delivery-container .delivery-content .clients span {
+        font-size: 1.6rem;
+    }
+
+    .digital .digital-container .owl-nav {
+        top: -45px;
+    }
+
+    .choose .choose-container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .blog .blog-container {
+        grid-template-columns: auto auto;
+    }
+
+    .blog .blog-container .blog-item:first-child {
+        justify-content: space-between;
+        padding-top: 6rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .button {
+        font-size: 18px;
+    }
+
+    .banner .banner-container h2,
+    .choose h2 {
+        font-size: 3.5rem;
+    }
+
+    .portfolio h2 {
+        font-size: 6rem;
+    }
+
+    .banner .container-fluid {
+        min-height: 110vh;
+    }
+
+    .banner .banner-image {
+        bottom: 12rem;
+    }
+
+    .banner .banner-image img {
+        max-width: 19rem;
+    }
+
+    @keyframes rocket {
+        0% {
+            bottom: 0;
+        }
+
+        100% {
+            bottom: 12rem;
+        }
+    }
+
+    .about .about-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about .about-container .about-delivery {
+        width: 35%;
+    }
+
+    .about .about-container .about-challenges {
+        margin-top: 0;
+        width: 60%;
+    }
+
+    .portfolio .item .item-content {
+        width: 66%;
+        margin-bottom: 3rem;
+    }
+
+    .portfolio .item .item-content p {
+        width: 84%;
+    }
+
+    .portfolio .item p {
+        font-size: 14px;
+    }
+
+    .portfolio .item h2 {
+        color: #4E0977;
+        font-weight: bold;
+        font-size: 3.8rem;
+    }
+
+    .portfolio .item img {
+        max-width: 360px;
+    }
+
+    .digital .digital-container .digital-item {
+        padding: 2.2rem 2.5rem;
+    }
+
+    .digital .digital-container .digital-item img {
+        max-width: 125px;
+    }
+
+    .digital .digital-container .digital-item .digital-heading h2 {
+        font-size: 32px;
+    }
+
+    .digital .digital-container .digital-item p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .digital .owl-stage-outer {
+        margin: auto;
+    }
+
+    .portfolio {
+        position: relative;
+    }
+
+    .portfolio::before,
+    .portfolio::after {
+        content: '';
+        position: absolute;
+        background-image: url(/assets/img/portfolio-effect.png);
+        height: 220px;
+        width: 220px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        animation: portfolioEffect 6s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%) infinite;
+    }
+
+    .portfolio::before {
+        top: 0;
+        left: 0;
+    }
+
+    .portfolio::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    .people {
+        position: relative;
+    }
+
+    .people::before {
+        content: '';
+        position: absolute;
+        bottom: 15px;
+        left: 10px;
+        background-image: url(/assets/img/halo-effect.png);
+        height: 150px;
+        width: 150px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        animation: starEffect2 12s linear infinite;
+    }
+
+    .people .people-container {
+        position: relative;
+    }
+
+    .people .people-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url(/assets/img/portfolio-effect.png);
+        height: 70px;
+        width: 80px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        animation: starEffect 8s linear infinite;
+    }
+
+    .people .people-carousel::before {
+        content: '';
+        position: absolute;
+        right: 80px;
+        top: 0;
+        background-image: url(/assets/img/dots.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 160px;
+        width: 160px;
+        animation: dotsEffect 8s linear infinite;
+    }
+
+    .people .people-carousel::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 110px;
+        background-image: url(/assets/img/portfolio-effect.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 80px;
+        width: 80px;
+        animation: portfolioEffect 6s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%) infinite;
+    }
+
+    @keyframes dotsEffect {
+        0% {
+            transform: rotate(0);
+        }
+
+        25% {
+            transform: rotate(60deg);
+        }
+
+        50% {
+            transform: rotate(120deg);
+        }
+
+        75% {
+            transform: rotate(60deg);
+        }
+
+        100% {
+            transform: rotate(0);
+        }
+    }
+
+    @keyframes starEffect2 {
+        0% {
+            transform: rotate(0) scaleY(1);
+        }
+
+        50% {
+            transform: rotate(360deg) scaleY(-1);
+        }
+
+        100% {
+            transform: rotate(0) scaleY(1);
+        }
+    }
+
+    @keyframes starEffect {
+        from {
+            transform: rotate(0);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes portfolioEffect {
+        0% {
+            transform: scale(0.7);
+        }
+
+        50% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0.7);
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    section,
+    footer {
+        padding: 4rem 2rem;
+    }
+
+    .heading h2 {
+        font-size: 42px;
+    }
+
+    .banner .banner-image {
+        bottom: 16rem;
+    }
+
+    .portfolio .item {
+        padding: 7rem 4rem 0 7rem;
+    }
+
+    .portfolio .item .item-content p {
+        font-size: 16px;
+    }
+
+    .portfolio .item h2 {
+        font-size: 4.8rem;
+    }
+
+    .portfolio .item img {
+        max-width: 485px;
+        transform: translate(0px, -190px);
+    }
+
+    .delivery .delivery-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .delivery .delivery-container .heading,
+    .delivery .delivery-container .delivery-content {
+        width: 48%;
+        margin-bottom: 0;
+    }
+
+    .people .people-carousel .owl-stage-outer {
+        width: 80%;
+        margin: auto;
+    }
+
+    .people .people-item {
+        width: 80%;
+    }
+
+    .people .people-carousel .owl-stage-outer .owl-item {
+        padding: 10px;
+    }
+
+    .blog .heading h2 {
+        font-size: 80px;
+    }
+
+    @keyframes rocket {
+        0% {
+            bottom: 0;
+        }
+
+        100% {
+            bottom: 16rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .container-fluid {
+        max-width: 80rem;
+    }
+}

@@ -1,0 +1,432 @@
+.navbar .megamenu {
+    padding: 1rem;
+}
+
+.navbar-brand img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.navbar .nav-right .toggle {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.main-nav {
+    display: none;
+}
+
+.main-nav.show-nav {
+    display: flex;
+}
+
+.navbar .nav-right .toggle span {
+    width: 25px;
+    height: 4px;
+    background: #646464;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.navbar .nav-right .toggle span:nth-child(2) {
+    transform: translateX(3px);
+}
+
+.main-nav .navbar-nav li a,
+.navbar-dark .navbar-nav .nav-link {
+    color: #000 !important;
+}
+
+.main-nav .navbar-nav li a:hover {
+    color: #000;
+}
+
+.navbar .has-megamenu {
+    position: static !important;
+}
+
+.navbar .megamenu {
+    left: 0;
+    right: 0;
+    top: 30%;
+    display: block;
+    min-width: unset;
+    visibility: hidden;
+    width: 100%;
+    margin-top: 0;
+    box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    max-width: 1100px;
+    margin: auto;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar .megamenu.show {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s ease-in-out;
+    border: 1px solid #000;
+}
+
+.navbar .megamenu ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.navbar .megamenu.tech-menu ul {
+    gap: 1px;
+}
+
+.navbar .megamenu.tech-menu ul li .dropdown-list-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.navbar .megamenu.tech-menu ul li {
+    width: 100%;
+}
+
+.navbar .megamenu ul li,
+.navbar .megamenu ul li a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.navbar .megamenu.tech-menu ul li .dropdown-list-content .dropdown-content ul li {
+    width: 100%;
+}
+
+.navbar .megamenu.tech-menu ul li .dropdown-list-content .dropdown-content ul li a {
+    width: fit-content;
+}
+
+.navbar .megamenu.tech-menu ul li {
+    font-size: 13px;
+}
+
+.navbar .megamenu.tech-menu ul li a {
+    align-items: flex-start;
+}
+
+.navbar .megamenu ul li span {
+    background: #D8FDFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 82px;
+    height: 72px;
+    border-radius: 10px;
+    padding: 15px;
+    transition: .3s ease-in-out;
+    position: relative;
+}
+
+.navbar .megamenu.tech-menu ul li span {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 8px;
+    min-width: 35px;
+    min-height: 35px;
+}
+
+.navbar .megamenu ul li:hover span {
+    box-shadow: 0px 0px 11px 7px #00000026;
+    transition: .3s ease-in-out;
+}
+
+.navbar .megamenu ul li:hover span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 80%;
+    width: 3px;
+    background: #19C8D0;
+    display: flex;
+    margin: auto;
+}
+
+.navbar .megamenu ul li span img {
+    width: 100%;
+}
+
+.navbar .megamenu ul li .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.navbar .megamenu ul li .dropdown-content h3 {
+    font-size: 22px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.navbar .megamenu.tech-menu ul li .dropdown-content h3 {
+    font-size: 0.85rem;
+}
+
+.navbar .megamenu ul li .dropdown-content p {
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.main-nav .navbar-nav li a,
+.navbar-dark .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.toggle,
+.toggle.close-toggle,
+.toggle span,
+.toggle.close-toggle span {
+    transition: 1s ease-in-out;
+}
+
+.toggle.close-toggle span:nth-child(2) {
+    display: none;
+}
+
+.toggle.close-toggle span:nth-child(1) {
+    transform: rotate(-54deg) translate(-1px, 1px);
+}
+
+.toggle.close-toggle span:nth-child(3) {
+    transform: rotate(45deg) translate(-3px, -4px);
+}
+
+ul.toggle-menu {
+    display: flex !important;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+    position: fixed;
+    right: -150%;
+    top: 0px;
+    min-width: fit-content;
+    width: 100vw;
+    z-index: 999;
+    transition: 1s ease-in-out;
+    background: #19c8d0;
+}
+
+ul.toggle-menu::-webkit-scrollbar-track {
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0;
+}
+
+ul.toggle-menu.show-menu {
+    right: 0;
+    transition: 1s ease-in-out;
+}
+
+ul.toggle-menu.show-menu li a.nav-link {
+    font-size: 4rem;
+    color: #fff !important;
+}
+
+ul.toggle-menu.show-menu .dropdown-menu.megamenu.tech-menu.show {
+    top: unset;
+    width: 98%;
+    margin: 0 auto;
+}
+
+
+@media all and (min-width: 768px) {
+    .navbar .megamenu ul li {
+        width: calc(50% - 25px);
+    }
+
+    .navbar .megamenu.tech-menu ul li {
+        width: calc(50% - 15px);
+    }
+
+    .navbar .megamenu ul li .dropdown-content ul li {
+        width: 100%;
+        transition: .3s ease-in-out;
+        position: relative;
+        width: fit-content;
+    }
+
+    .navbar .megamenu.tech-menu ul li .dropdown-list-content .dropdown-content ul li:hover a {
+        font-weight: bold;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .navbar {
+        padding-block: 1.5rem !important;
+        position: relative;
+    }
+
+    .navbar::before {
+        content: '';
+        position: absolute;
+        top: -36px;
+        right: 25%;
+        background-image: url(/assets/img/banner-effect.png);
+        height: 110px;
+        width: 110px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    #main_nav .navbar-nav {
+        border-radius: 40px;
+        padding: 10px 40px !important;
+        color: #000;
+        min-width: 500px;
+    }
+
+    .main-nav {
+        display: flex !important;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        padding: 2.2rem;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+    .navbar .megamenu.tech-menu ul li {
+        width: calc(33% - 15px);
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .navbar .megamenu.tech-menu ul li {
+        width: calc(20% - 15px);
+    }
+}
+
+@media(max-width: 991px) {
+
+    .navbar.fixed-top .navbar-collapse,
+    .navbar.sticky-top .navbar-collapse {
+        overflow-y: auto;
+        max-height: 90vh;
+        margin-top: 10px;
+    }
+
+    .main-nav {
+        position: fixed;
+        width: 80%;
+        top: 0px;
+        left: -100%;
+        z-index: 99;
+        height: 100vh;
+        transition: 1s ease-in-out;
+        display: flex;
+        background: #fff;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        text-align: center;
+    }
+
+    .navbar .megamenu ul {
+        gap: 15px;
+    }
+
+    .main-nav ul.navbar-nav {
+        flex-direction: column !important;
+        height: 100%;
+        justify-content: flex-start !important;
+        width: 100%;
+        max-height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .navbar .megamenu {
+        border-radius: 0;
+        box-shadow: none;
+        display: none;
+    }
+
+    .navbar .megamenu.show {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .navbar .megamenu ul li span {
+        width: 82px;
+        height: 50px;
+    }
+
+    .navbar .megamenu.tech-menu ul li span {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar .megamenu ul li .dropdown-content h3 {
+        font-size: 15px;
+    }
+
+    .navbar .megamenu.tech-menu ul li .dropdown-content h3 {
+        font-size: 11px;
+    }
+
+    .navbar .megamenu ul li .dropdown-content p {
+        font-size: 12px;
+    }
+
+    .main-nav.show-nav {
+        left: 0;
+    }
+
+    .digital .digital-container .digital-item {
+        min-width: 300px;
+    }
+
+    .portfolio .item h2 {
+        margin-block: 16px;
+    }
+
+    .navbar-nav button.button {
+        min-width: 125px;
+        font-size: 13px;
+    }
+
+    .navbar-nav button.button img {
+        width: 20px;
+    }
+
+    .navbar-brand img {
+        max-width: 190px;
+    }
+
+    body ul.toggle-menu {
+        display: none !important;
+    }
+}

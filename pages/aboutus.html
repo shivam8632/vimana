@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/style/header.css">
+    <link rel="stylesheet" href="../assets/style/footer.css">
+</head>
+
+<body>
+    <!-- start header section -->
+    <div id="includedBanner"></div>
+    <!-- end header section -->
+
+    <!-- start banner section -->
+    <section class="inner-banner">
+        <div class="container-fluid d-flex flex-column justify-content-center">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="heading lg:w-50">
+                        <h2>About Us</h2>
+                        <p>Suspendisse felis metus, consequat eget semper fermentum, cursus euismod augue. Pellentesque
+                            ut orci imperdiet,
+                            eleifend odio non, pulvinar erat</p>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-md-flex justify-content-end">
+                    <img src="../assets/img/banner-rocket.png" alt="baner-rocket" class="w-100"
+                        style="max-width: 180px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end banner section -->
+
+    <!-- Delivery Starts -->
+    <div id="includedDelivery"></div>
+    <!-- Delivery Ends -->
+
+    <!-- Choose Starts -->
+    <div id="includedChoose"></div>
+    <!-- Choose Ends -->
+
+    <!-- People Starts -->
+    <div id="includedPeople"></div>
+    <!-- People Ends -->
+
+    <!-- Blog Starts -->
+    <div id="includedBlog"></div>
+    <!-- Blog Ends -->
+
+    <!-- start footer section -->
+    <div id="includedFooter"></div>
+    <!-- end footer section -->
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+<script>
+    $(function () {
+        $("#includedBanner").load("../components/header/header.html");
+        $("#includedFooter").load("../components/footer/footer.html");
+        $("#includedDelivery").load("../components/delivery/delivery.html");
+        $("#includedChoose").load("../components/choose/choose.html");
+        $("#includedPeople").load("../components/people/people.html");
+        $("#includedBlog").load("../components/blog/blog.html");
+    });
+</script>
+
+</html>

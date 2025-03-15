@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="delivery" data-aos="fade-right" data-aos-duration="800">
+        <div class="container-fluid">
+            <div class="delivery-container">
+                <div class="heading">
+                    <h2>We are Delivering Beautiful Digital Products for you</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, nunc sed vehicula
+                        facilisis, eros augue tincidunt
+                        lorem, eget ullamcorper</p>
+                </div>
+
+                <div class="delivery-content">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="clients">
+                                <div class="client-imgs d-flex align-items-center justify-content-end mb-5">
+                                    <img src="../../assets/img/client1.png" alt="client">
+                                    <img src="../../assets/img/client2.png" alt="client">
+                                    <img src="../../assets/img/client3.png" alt="client">
+                                </div>
+                                <div>
+                                    <div id="counter">
+                                        <span class="count percent" data-count="100">
+                                            0
+                                        </span>
+                                    </div>
+                                    <h5>Happy Client</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card mt-3 mt-md-0">
+                                <div class="percent">
+                                    <svg width="100" height="100" viewBox="0 0 220 220">
+                                        <circle cx="110" cy="110" r="95"></circle>
+                                        <circle cx="110" cy="110" r="95" style="--percent: 15"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h3>15<span>+</span></h3>
+                                    </div>
+                                </div>
+
+
+                                <h3 class="mb-0 mt-4">Years of Experience</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+<script>
+    $(document).ready(function () {
+        var counted = 0;
+        $(window).scroll(function () {
+            var oTop = $('#counter').offset().top - window.innerHeight;
+            if (counted == 0 && $(window).scrollTop() > oTop) {
+                $('.count').each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr('data-count');
+
+                    gsap.to($this, {
+                        duration: 2,
+                        innerText: countTo,
+                        roundProps: "innerText",
+                        ease: "power2.out"
+                    });
+                });
+                counted = 1;
+            }
+        });
+    });
+
+</script>
+
+</html>

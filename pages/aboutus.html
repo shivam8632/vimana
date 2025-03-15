@@ -12,8 +12,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../assets/style/header.css">
-    <link rel="stylesheet" href="../assets/style/footer.css">
+    <link rel="stylesheet" href="/assets/style/header.css">
+    <link rel="stylesheet" href="/assets/style/footer.css">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="col-6 d-none d-md-flex justify-content-end">
-                    <img src="../assets/img/banner-rocket.png" alt="baner-rocket" class="w-100"
+                    <img src="/vimana/assets/img/banner-rocket.png" alt="baner-rocket" class="w-100"
                         style="max-width: 180px">
                 </div>
             </div>
@@ -83,6 +83,18 @@
         $("#includedPeople").load("../components/people/people.html");
         $("#includedBlog").load("../components/blog/blog.html");
     });
+</script>
+
+<script>
+    (function () {
+        let base = "";
+        if (window.location.hostname.includes("github.io")) {
+            base = "/vimana/"; // GitHub Pages base path
+        }
+        document.querySelectorAll("link[rel='stylesheet']").forEach(link => {
+            link.href = base + link.getAttribute("href");
+        });
+    })();
 </script>
 
 </html>

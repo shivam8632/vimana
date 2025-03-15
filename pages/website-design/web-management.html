@@ -17,17 +17,6 @@
     <link rel="stylesheet" href="/vimana/assets/style/header.css">
     <link rel="stylesheet" href="/vimana/assets/style/footer.css">
     <link rel="stylesheet" href="/vimana/assets/style/custom.css">
-    <script>
-        (function () {
-            let base = "";
-            if (window.location.hostname.includes("github.io")) {
-                base = "/vimana/"; // GitHub Pages base path
-            }
-            document.querySelectorAll("link[rel='stylesheet']").forEach(link => {
-                link.href = base + link.getAttribute("href");
-            });
-        })();
-    </script>
 
 </head>
 

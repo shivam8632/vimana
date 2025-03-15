@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'syne-bold';
-    src: url('/assets/fonts/Syne-Bold.woff2') format('woff2'),
-        url('/assets/fonts/Syne-Bold.woff') format('woff');
+    src: url('/vimana/assets/fonts/Syne-Bold.woff2') format('woff2'),
+        url('/vimana/assets/fonts/Syne-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'syne-semiBold';
-    src: url('/assets/fonts/Syne-SemiBold.woff2') format('woff2'),
-        url('/assets/fonts/Syne-SemiBold.woff') format('woff');
+    src: url('/vimana/assets/fonts/Syne-SemiBold.woff2') format('woff2'),
+        url('/vimana/assets/fonts/Syne-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'syne';
-    src: url('/assets/fonts/Syne-Regular.woff2') format('woff2'),
-        url('/assets/fonts/Syne-Regular.woff') format('woff');
+    src: url('/vimana/assets/fonts/Syne-Regular.woff2') format('woff2'),
+        url('/vimana/assets/fonts/Syne-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'syne-medium';
-    src: url('/assets/fonts/Syne-Medium.woff2') format('woff2'),
-        url('/assets/fonts/Syne-Medium.woff') format('woff');
+    src: url('/vimana/assets/fonts/Syne-Medium.woff2') format('woff2'),
+        url('/vimana/assets/fonts/Syne-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'sans-extraLight';
-    src: url('/assets/fonts/WorkSans-ExtraLight.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-ExtraLight.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-ExtraLight.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-ExtraLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -45,8 +45,8 @@
 
 @font-face {
     font-family: 'sans-light';
-    src: url('/assets/fonts/WorkSans-Light.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-Light.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-Light.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -54,8 +54,8 @@
 
 @font-face {
     font-family: 'sans-mediumItalic';
-    src: url('/assets/fonts/WorkSans-MediumItalic.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-MediumItalic.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-MediumItalic.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -63,8 +63,8 @@
 
 @font-face {
     font-family: 'sans-semiBold';
-    src: url('/assets/fonts/WorkSans-SemiBold.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-SemiBold.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-SemiBold.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -72,8 +72,8 @@
 
 @font-face {
     font-family: 'sans-italic';
-    src: url('/assets/fonts/WorkSans-Italic.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-Italic.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-Italic.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -81,8 +81,8 @@
 
 @font-face {
     font-family: 'sans-lightItalic';
-    src: url('/assets/fonts/WorkSans-LightItalic.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-LightItalic.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-LightItalic.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -90,8 +90,8 @@
 
 @font-face {
     font-family: 'sans-regular';
-    src: url('/assets/fonts/WorkSans-Regular.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-Regular.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-Regular.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -99,8 +99,8 @@
 
 @font-face {
     font-family: 'sans-extraLightItalic';
-    src: url('/assets/fonts/WorkSans-ExtraLightItalic.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-ExtraLightItalic.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-ExtraLightItalic.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-ExtraLightItalic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
     font-display: swap;
@@ -108,8 +108,8 @@
 
 @font-face {
     font-family: 'sans-medium';
-    src: url('/assets/fonts/WorkSans-Medium.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-Medium.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-Medium.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -117,8 +117,8 @@
 
 @font-face {
     font-family: 'sans-bold';
-    src: url('/assets/fonts/WorkSans-Bold.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-Bold.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-Bold.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -126,8 +126,8 @@
 
 @font-face {
     font-family: 'sans-blackItalic';
-    src: url('/assets/fonts/WorkSans-BlackItalic.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-BlackItalic.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-BlackItalic.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -135,8 +135,8 @@
 
 @font-face {
     font-family: 'sans-black';
-    src: url('/assets/fonts/WorkSans-Black.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-Black.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-Black.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -144,8 +144,8 @@
 
 @font-face {
     font-family: 'sans-semiBoldItalic';
-    src: url('/assets/fonts/WorkSans-SemiBoldItalic.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-SemiBoldItalic.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-SemiBoldItalic.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-SemiBoldItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
     font-display: swap;
@@ -153,8 +153,8 @@
 
 @font-face {
     font-family: 'sans-thin';
-    src: url('/assets/fonts/WorkSans-Thin.woff2') format('woff2'),
-        url('/assets/fonts/WorkSans-Thin.woff') format('woff');
+    src: url('/vimana/assets/fonts/WorkSans-Thin.woff2') format('woff2'),
+        url('/vimana/assets/fonts/WorkSans-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;

@@ -77,25 +77,13 @@
 
 <script>
     $(function () {
-        $("#includedBanner").load("../components/header/header.html");
-        $("#includedFooter").load("../components/footer/footer.html");
-        $("#includedDelivery").load("../components/delivery/delivery.html");
-        $("#includedChoose").load("../components/choose/choose.html");
-        $("#includedPeople").load("../components/people/people.html");
-        $("#includedBlog").load("../components/blog/blog.html");
+        $("#includedBanner").load("/vimana/components/header/header.html");
+        $("#includedFooter").load("/vimana/components/footer/footer.html");
+        $("#includedDelivery").load("/vimana/components/delivery/delivery.html");
+        $("#includedChoose").load("/vimana/components/choose/choose.html");
+        $("#includedPeople").load("/vimana/components/people/people.html");
+        $("#includedBlog").load("/vimana/components/blog/blog.html");
     });
-</script>
-
-<script>
-    (function () {
-        let base = "";
-        if (window.location.hostname.includes("github.io")) {
-            base = "/vimana/"; // GitHub Pages base path
-        }
-        document.querySelectorAll("link[rel='stylesheet']").forEach(link => {
-            link.href = base + link.getAttribute("href");
-        });
-    })();
 </script>
 
 </html>
